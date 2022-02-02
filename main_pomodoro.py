@@ -34,18 +34,18 @@ def start_timer():
     if reps % 8 == 0:
         subcaption.config(text="Long Break", fg=RED)
         countdown(long_break_sec)
-        playsound('path/beep-07a.mp3')
+        playsound('pomodoro_timer/beep-07a.mp3')
     # if it 2nd /4th/6th rep
     if reps % 2 == 0:
         subcaption.config(text="Short Break", fg=PINK)
         countdown(short_break_sec)
-        playsound('path/beep-07a.mp3')
+        playsound('pomodoro_timer/beep-07a.mp3')
         print()
     else:
 
         subcaption.config(text="Work Session")
         countdown(work_sec)
-        playsound('path/beep-07a.mp3')
+        playsound('pomodoro_timer/beep-07a.mp3')
 
 
 
